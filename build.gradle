@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.4.2' apply false
+    id 'org.springframework.boot' version '2.5.6' apply false
 }
 
 subprojects {
@@ -10,13 +10,14 @@ subprojects {
     apply plugin: 'io.spring.dependency-management'
 
     group = 'com.github.hirakida.spring.boot'
-    version = '0.1.4'
+    version = '0.0.1'
     sourceCompatibility = JavaVersion.VERSION_11
 
     repositories {
         mavenCentral()
     }
 
+    // https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry
     publishing {
         repositories {
             maven {
@@ -32,7 +33,6 @@ subprojects {
         publications {
             gpr(MavenPublication) {
                 from components.java
-
                 versionMapping {
                     usage('java-api') {
                         fromResolutionOf('runtimeClasspath')
