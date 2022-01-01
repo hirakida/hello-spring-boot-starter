@@ -1,4 +1,4 @@
 
 ```shell
-$ ../gradlew bootRun
+$ ./gradlew bootRun
 ```
