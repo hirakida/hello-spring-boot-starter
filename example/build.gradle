@@ -24,5 +24,5 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'com.github.hirakida.spring.boot:hello-spring-boot-starter:0.0.2'
+    implementation 'com.github.hirakida.spring.boot:hello-spring-boot-starter:0.1.0'
 }
